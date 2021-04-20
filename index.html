@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-6 first-box">
+            <h1>How to use custom Js</h1>
+        </div>
+        <div class="col-6 second-box">
+            <h3>Using Require Js</h3>
+        </div>
+    </div>
+    <script data-main="app" src="require.js-2.3.6.js"></script>
+
+    <script>
+        require(['app'], function() {
+            require(['scripts/custom']);
+        });
+        
+    </script>
+</body>
+</html>
